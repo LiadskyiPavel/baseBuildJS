@@ -1,3 +1,7 @@
+@import "bootstrap-custom";
+@import "fonts";
+@import "myVariables";
+
 * {
   box-sizing: border-box;
 
@@ -6,3 +10,11 @@
     box-sizing: border-box;
   }
 }
+
+.holder {
+	background-color: $body-bg;
+}
+
+@import "header";
+@import "mainPost";
+@import "footer";

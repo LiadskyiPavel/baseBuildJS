@@ -1,0 +1,70 @@
+.card {
+	padding: 40px 0;
+	background-color: $backgroundCard;
+
+	dl {
+		margin-top: 1rem;
+	}
+}
+
+.cardPicture {
+	width: 100%;
+}
+
+.containCard {
+	display: flex;
+	justify-content: start;
+	width: 100%;
+	padding: 0 5px;
+
+	dd {
+		padding: 0 5px;
+		color: $cardText;
+	}
+}
+
+.cardButton {
+
+	.btn-primary {
+		font-size: 14px;
+		text-transform: uppercase;
+		color: $white;
+	}
+}
+
+.sectionReference {
+	padding: 100px 0 0;
+}
+
+.referencesHolder {
+	display: flex;
+	justify-content: center;
+
+}
+
+.reference {
+	list-style-type: none;
+	padding: 5px 55px;
+
+	a {
+		text-transform: uppercase;
+		text-decoration: none;
+		color: $refColor;
+
+		&:hover {
+			color: $refHoverColor;
+
+			&:after {
+				content: '';
+				display: block;
+				height: 2px;
+				width: 100%;
+				background-color: $orange;
+			}
+		}
+	}
+}
+
+.posts {
+	padding-top: 40px;
+}
