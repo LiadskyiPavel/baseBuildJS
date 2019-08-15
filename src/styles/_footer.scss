@@ -43,7 +43,7 @@
 			}
 	
 			&:hover {
-				color: $orange;
+				color: $primary;
 			}
 		}
 	
@@ -53,7 +53,7 @@
 	
 		.icon-twitter:before {
 	  	content: "\ea96";
-		color: $orange;
+		color: $primary;
 		}
 	
 		.icon-instagram:before {
@@ -72,5 +72,5 @@
 
 .copyright {
 	text-align: center;
-	font-size: .75rem;
+	font-size: $font-size-sm;
 }

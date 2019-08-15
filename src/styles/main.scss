@@ -2,19 +2,8 @@
 @import "fonts";
 @import "myVariables";
 
-* {
-  box-sizing: border-box;
 
-  &:before,
-  &:after {
-    box-sizing: border-box;
-  }
-}
-
-.holder {
-	background-color: $body-bg;
-}
-
+@import "holder";
 @import "header";
 @import "mainPost";
 @import "footer";

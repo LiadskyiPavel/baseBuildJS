@@ -1,17 +1,25 @@
 .card {
-	padding: 40px 0;
+	padding-top: 10px;
 	background-color: $backgroundCard;
+
+	@media (min-width: 922px) {
+		padding-top: 40px;
+	}
 
 	dl {
 		margin-top: 1rem;
 	}
 }
 
-.cardPicture {
-	width: 100%;
+.card-picture {
+
+	img {
+		width: 100%;
+
+	}
 }
 
-.containCard {
+.contain-card {
 	display: flex;
 	justify-content: start;
 	width: 100%;
@@ -23,7 +31,7 @@
 	}
 }
 
-.cardButton {
+.card-button {
 
 	.btn-primary {
 		font-size: 14px;
@@ -32,11 +40,16 @@
 	}
 }
 
-.sectionReference {
-	padding: 100px 0 0;
+.section-reference {
+	padding-top: 20px;
+
+	@media (min-width: 768px){
+		padding-top: 100px;
+
+	}
 }
 
-.referencesHolder {
+.reference-holder {
 	display: flex;
 	justify-content: center;
 
@@ -44,7 +57,20 @@
 
 .reference {
 	list-style-type: none;
-	padding: 5px 55px;
+	padding: 5px 10px;
+
+	@media (min-width: 576px) {
+		padding: 5px 20px;
+	}
+
+	@media (min-width: 768px) {
+		padding: 5px 35px;
+	}
+
+	
+	@media (min-width: 1200px) {
+		padding: 5px 55px;
+	}
 
 	a {
 		text-transform: uppercase;
@@ -59,22 +85,22 @@
 				display: block;
 				height: 2px;
 				width: 100%;
-				background-color: $orange;
+				background-color: $primary;
 			}
 		}
 	}
 
-	// .activ {
-	// 	color: $refHoverColor;
+	.active {
+		color: $refHoverColor;
 
-		// &:after {
-		// 	content: '';
-		// 	display: block;
-		// 	height: 2px;
-		// 	width: 100%;
-		// 	background-color: $orange;
-		// }
-	// }
+		&:after {
+			content: '';
+			display: block;
+			height: 2px;
+			width: 100%;
+			background-color: $primary;
+		}
+	}
 }
 
 .posts {
