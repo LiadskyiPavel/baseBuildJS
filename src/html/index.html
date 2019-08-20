@@ -16,14 +16,14 @@
 <body>
 	<div id="wrapper">
 		<div class="holder">
-			<div class="container">
-				<header>
-					<div class="upperHeader">
+			<header class="header">
+				<div class="header-up">
+					<div class="container">
 						<div class="row align-items-center">
-							<div class="col-12 col-md-6 col-lg-6">
+							<div class="col-md-6 col-lg-6">
 								<span><strong>Daily Update: </strong>Branding notes photo in portfolio</span>
 							</div>
-							<div class="col-11 col-sm-7 col-md-9 col-lg-4">
+							<div class="col-sm-7 col-md-9 col-lg-4">
 								<nav class="navbar">
 									<form class="form-inline">
 										<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -31,8 +31,8 @@
 									</form>
 								</nav>
 							</div>
-							<div class="col-3 col-sm-5 col-md-3 col-lg-2">
-								<div class="icon">
+							<div class="col-sm-5 col-md-3 col-lg-2">
+								<div class="social-box">
 									<ul class="list-group list-unstyled">
 										<li class="flex-fill"><a href="#"><i class="icon-facebook2"></i></a></li>
 										<li class="flex-fill"><a href="#"><i class="icon-twitter activ"></i></a></li>
@@ -43,69 +43,75 @@
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="bottom-header">
-						<div class="row">
-							<div class="col-9 col-md-3">
+					</div>	
+				</div>
+				<div class="header-bottom">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-sm-9 col-md-3">
 								<div class="logo">
 									<a href="#"><img src="../../images/logo.png" alt="logo"></a>
 								</div>
 							</div>
-							<div class="col-12 col-lg-9 align-items-center">
-								<ul class="nav nav-references  justify-content-between">
-									<li class="nav-item">
-										<a class="nav-link active" href="#">Home</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Portfolio</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">About</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Services</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Blog</a>
-									</li>
-									<li class="nav-item">
-										<a class="nav-link" href="#">Contact Us</a>
-									</li>
-								</ul>
+							<div class="col-lg-9 ">
+								<nav>
+									<ul class="nav nav-references  justify-content-between">
+										<li class="nav-item">
+											<a class="nav-link active" href="#">Home</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Portfolio</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">About</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Services</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Blog</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="#">Contact Us</a>
+										</li>
+									</ul>
+								</nav>
 							</div>
 						</div>
 					</div>
-				</header>
-				<main>
-					<section class="card">
+				</div>	
+			</header>
+			<main class="main">
+				<div class="container">
+					<section class="person">
 						<div class="row">
-							<div class="col-10 col-sm-4 col-md-3">
-								<div class="card-picture">
+							<div class="col-sm-10 col-sm-4 col-md-3">
+								<div class="person-picture">
 									<img src="../../images/card.jpg" alt="cardPicture">
 								</div>
 							</div>
-							<div class="col-12 col-sm-8 col-md-6 col-lg-7">
+							<div class="col-sm-8 col-md-6 col-lg-7">
 								<dl>
-									<div class="contain-card">
+									<div class="person-contain">
 										<dt>name: </dt>
 										<dd>albert alex</dd>
 									</div>
-									<div class="contain-card">
+									<div class="person-contain">
 										<dt>phone: </dt>
 										<dd>+80 356 22 5688</dd>
 									</div>
-									<div class="contain-card">
+									<div class="person-contain">
 										<dt>email address: </dt>
 										<dd>info@domain.com</dd>
 									</div>
-									<div class="contain-card">
+									<div class="person-contain">
 										<dt>studio address: </dt>
-										<dd>Studio 36 Jump road Street, New York ACT 1955.</dd>
+										<dd><address>Studio 36 Jump road Street, New York ACT 1955.</address></dd>
 									</div>
 								</dl>
 							</div>
-							<div class="col col-md-3 col-lg-2 align-self-end">
-								<div class="card-button">
+							<div class="col-md-3 col-lg-2 align-self-end">
+								<div class="person-button">
 									<button type="button" class="btn btn-primary">contact me</button>
 								</div>
 							</div>
@@ -114,46 +120,55 @@
 					<section class="section-reference">
 						<div class="row">
 							<div class="col">
-								<div class="reference-holder">
-									<li class="reference">
-										<a class=" active" href="#">all</a>
-									</li>
-									<li class="reference">
-										<a class="" href="#">illustration</a>
-									</li>
-									<li class="reference">
-										<a class="" href="#">presentation</a>
-									</li>
-									<li class="reference">
-										<a class="" href="#">photography</a>
-									</li>
-									<li class="reference">
-										<a class="" href="#">other</a>
-									</li>
-								</div>
+								<!-- <div class="reference-holder"> -->
+									<ul class="nav   justify-content-between">
+										<li class="reference">
+											<a class=" active" href="#">all</a>
+										</li>
+										<li class="reference">
+											<a class="" href="#">illustration</a>
+										</li>
+										<li class="reference">
+											<a class="" href="#">presentation</a>
+										</li>
+										<li class="reference">
+											<a class="" href="#">photography</a>
+										</li>
+										<li class="reference">
+											<a class="" href="#">other</a>
+										</li>
+									</ul>
+								<!-- </div> -->
 							</div>
 						</div>
 					</section>
 					<section class="posts">
 						
 					</section>
-				</main>
-				<footer class="footer">
-					<div class="icon">
-						<ul class="list-group list-unstyled">
-							<li class="social"><a href="#"><i class="icon-facebook2"></i></a></li>
-							<li class="social"><a href="#"><i class="icon-twitter activ"></i></a></li>
-							<li class="social"><a href="#"><i class="icon-instagram"></i></a></li>
-							<li class="social"><a href="#"><i class="icon-pinterest"></i></a></li>
-							<li class="social"><a href="#"><i class="icon-dribbble"></i></a></li>
-						</ul>
+				</div>
+			</main>
+			<footer class="footer">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-sm-5 col-md-3 col-xl-2">
+							<div class="social-box">
+								<ul class="list-group list-unstyled">
+									<li class="flex-fill"><a href="#"><i class="icon-facebook2"></i></a></li>
+									<li class="flex-fill"><a href="#"><i class="icon-twitter activ"></i></a></li>
+									<li class="flex-fill"><a href="#"><i class="icon-instagram"></i></a></li>
+									<li class="flex-fill"><a href="#"><i class="icon-pinterest"></i></a></li>
+									<li class="flex-fill"><a href="#"><i class="icon-dribbble"></i></a></li>
+								</ul>
+							</div>
+						</div>
 					</div>
+					
 					<div class="copyright">
 						<p>Portfolio with Icon by <a href="#"> <span>Digitudes</span></a></p>
-						<p>&copy;Copyright 2019<a href="#"><span>&#64;Republic.</span></a> All Rights Reserved</p>
+						<p>&copy;Copyright 2019<a href="#"><span>&commat;Republic.</span></a> All Rights Reserved</p>
 					</div>
-				</footer>
-			</div>
+				</div>	
+			</footer>
 		</div>
 	</div>
 </body>

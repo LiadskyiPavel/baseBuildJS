@@ -1,17 +1,28 @@
-.card {
-	padding-top: 10px;
-	background-color: $backgroundCard;
+.main {
+	margin-bottom: 40px;
 
 	@media (min-width: 922px) {
-		padding-top: 40px;
+		margin-bottom: 100px;
 	}
+}
+
+.person {
+	margin-bottom: 20px;
+	background-color: $backgroundCard;
+
+	@media (min-width: 768px){
+		margin-bottom: 40px;
+
+	}
+
+	
 
 	dl {
 		margin-top: 1rem;
 	}
 }
 
-.card-picture {
+.person-picture {
 
 	img {
 		width: 100%;
@@ -19,7 +30,7 @@
 	}
 }
 
-.contain-card {
+.person-contain {
 	display: flex;
 	justify-content: start;
 	width: 100%;
@@ -31,7 +42,7 @@
 	}
 }
 
-.card-button {
+.person-button {
 
 	.btn-primary {
 		font-size: 14px;
@@ -41,30 +52,29 @@
 }
 
 .section-reference {
-	padding-top: 20px;
-
-	@media (min-width: 768px){
-		padding-top: 100px;
-
+	margin-bottom: 20px;
+	
+	@media (min-width: 768px) {
+		margin-bottom: 40px;
 	}
 }
 
-.reference-holder {
-	display: flex;
-	justify-content: center;
+// .reference-holder {
+// 	display: flex;
+// 	justify-content: center;
 
-}
+// }
 
 .reference {
 	list-style-type: none;
 	padding: 5px 10px;
 
 	@media (min-width: 576px) {
-		padding: 5px 20px;
+		padding: 5px 5px;
 	}
 
 	@media (min-width: 768px) {
-		padding: 5px 35px;
+		padding: 5px 25px;
 	}
 
 	
@@ -103,6 +113,4 @@
 	}
 }
 
-.posts {
-	padding-top: 40px;
-}
+

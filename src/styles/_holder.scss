@@ -1,0 +1,26 @@
+ * {
+  box-sizing: border-box;
+
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+	min-width: 320px;
+}
+
+.wrapper {
+	max-width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.holder {
+	background-color: $body-bg;
+	font-size: $font-size-sm;
+
+	@media (min-width: 576px) {
+		font-size: $font-size-lg;
+	}
+}
